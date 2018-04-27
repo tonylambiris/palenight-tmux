@@ -1,61 +1,21 @@
-#### tmux Plugin Manager
+# palenight tmux colour theme
+A tmux theme with dark colours inspired by the drewtempelmeyer/palenight.vim theme for Vim/Neovim.
+Much of the work was forked from the mbdimitrova/tmux-wolfpack theme.
 
-The recommended method to install palenight tmux is via [`tpm`](https://github.com/tmux-plugins/tpm).
+## Installation
+You can install the theme in two ways:
 
-Add palenight tmux to your `~/.tmux.conf`
+### Add to your .tmux.conf
+Append the content of `palenight.tmux` to `.tmux.conf`:
 
-```sh
-set -g @plugin 'tonylambiris/palenight-tmux'
-```
+```cat theme/palenight.tmux >> ~/.tmux.conf```
 
-and press the default key binding `prefix` + <kbd>I</kbd> to fetch- and install the plugin.
+### [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
+Add as a plugin to the list of TPM plugins in `.tmux.conf`:
 
-#### Manual
+```set -g @plugin 'tonylambiris/palenight-tmux'```
 
-[Clone the repository](https://help.github.com/articles/cloning-a-repository)
+Hit `prefix + I` to fetch the plugin and source it.
 
-```sh
-git clone https://github.com/tonylambiris/palenight-tmux ~/.tmux/themes/palenight-tmux
-```
-and source the downloaded theme by adding it to the bottom of your `~/.tmux.conf`.
-
-```sh
-run-shell "~/.tmux/themes/palenight-tmux/palenight.tmux"
-```
-
-Reload your `~/.tmux.conf` file to source- and activate the theme.
-
-```sh
-tmux source-file `~/.tmux.conf`
-```
-
-## Features
-<p align="center"><strong>Optimized styles for command bar- and widgets</strong></p>
-
-<p align="center"><strong>Fits to many terminal applications based on palenight</strong></p>
-
-## Configuration
-
-### Disable status content
-
-By default, this theme provides status bar content (including the powerline-styled
-background arrows).
-
-The status content can be disabled by setting the `@palenight_tmux_show_status_content` to `0`:
-
-```sh
-set -g @palenight_tmux_show_status_content "0"
-```
-
-#### No patched fonts
-
-The default status content makes use of patched fonts which can be disabled by setting the `@palenight_tmux_no_patched_font` variable to `1`:
-
-```sh
-set -g @palenight_tmux_no_patched_font "1"
-```
-
-## Plugin Support
-### [tmux-prefix-highlight](https://github.com/tmux-plugins/tmux-prefix-highlight)
-Supports the *prefix*- and `copy-mode` status indicator.
-
+## Screenshots
+Coming soon
