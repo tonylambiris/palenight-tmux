@@ -2,18 +2,18 @@
 # Copyright (c) 2017-present Arctic Ice Studio <development@arcticicestudio.com>
 # Copyright (c) 2017-present Sven Greb <code@svengreb.de>
 
-# Project:    Nord tmux
-# Repository: https://github.com/arcticicestudio/nord-tmux
+# Project:    palenight tmux
+# Repository: https://github.com/arcticicestudio/palenight-tmux
 # License:    MIT
 # References:
 #   https://tmux.github.io
 
-PALENIGHT_TMUX_COLOR_THEME_FILE=src/nord.conf
+PALENIGHT_TMUX_COLOR_THEME_FILE=src/palenight.conf
 PALENIGHT_TMUX_VERSION=0.2.0
-PALENIGHT_TMUX_STATUS_CONTENT_FILE="src/nord-status-content.conf"
-PALENIGHT_TMUX_STATUS_CONTENT_NO_PATCHED_FONT_FILE="src/nord-status-content-no-patched-font.conf"
-PALENIGHT_TMUX_STATUS_CONTENT_OPTION="@nord_tmux_show_status_content"
-PALENIGHT_TMUX_NO_PATCHED_FONT_OPTION="@nord_tmux_no_patched_font"
+PALENIGHT_TMUX_STATUS_CONTENT_FILE="src/palenight-status-content.conf"
+PALENIGHT_TMUX_STATUS_CONTENT_NO_PATCHED_FONT_FILE="src/palenight-status-content-no-patched-font.conf"
+PALENIGHT_TMUX_STATUS_CONTENT_OPTION="@palenight_tmux_show_status_content"
+PALENIGHT_TMUX_NO_PATCHED_FONT_OPTION="@palenight_tmux_no_patched_font"
 _current_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 __cleanup() {
